@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>MainMenu</title>
+    <link rel="alternate stylesheet" type="text/css" href="resource://gre-resources/plaintext.css"
+      title="A capo automatico">
+  </head>
+  <body>
+    <pre id="line1"><span class="doctype">&lt;!DOCTYPE html&gt;</span><span>
+<span id="line2"></span></span><span>&lt;<span class="start-tag">html</span>&gt;</span><span>
+<span id="line3"></span>  </span><span>&lt;<span class="start-tag">head</span>&gt;</span><span>
+<span id="line4"></span>    </span><span>&lt;<span class="start-tag">meta</span> <span
+class="attribute-name">http-equiv</span>="<a class="attribute-value">content-type</a>" <span
+class="attribute-name">content</span>="<a class="attribute-value">text/html; charset=UTF-8</a>"&gt;</span><span>
+<span id="line5"></span>    </span><span>&lt;<span class="start-tag">title</span>&gt;</span><span>a</span><span>&lt;/<span
+class="end-tag">title</span>&gt;</span><span>
+<span id="line6"></span>  </span><span>&lt;/<span class="end-tag">head</span>&gt;</span><span>
+<span id="line7"></span>  </span><span>&lt;<span class="start-tag">body</span>&gt;</span><span>
+<span id="line8"></span>    </span><span>&lt;<span class="start-tag">hr</span> <span
+class="attribute-name">style</span>="<a class="attribute-value">color: white;</a>"&gt;</span><span>
+<span id="line9"></span>    </span><span>&lt;<span class="start-tag">p</span>&gt;</span><span></span><span>&lt;<span
+class="start-tag">br</span>&gt;</span><span>
+<span id="line10"></span>    </span><span>&lt;/<span class="end-tag">p</span>&gt;</span><span>
+<span id="line11"></span>  </span><span>&lt;/<span class="end-tag">body</span>&gt;</span><span>
+<span id="line12"></span></span><span>&lt;/<span class="end-tag">html</span>&gt;</span><span></span></pre>
+  </body>
+</html>

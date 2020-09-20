@@ -1,0 +1,134 @@
+<%@page import="gruppo.boundary.InterfacciaUtenteLogin"%>
+<%@page import="gruppo.DAO.PrenotazioneDao"%>
+<%@ page language="java"  contentType="text/html; charset=ISO-8859-1"
+         pageEncoding="ISO-8859-1" %>
+
+
+
+<% 
+	InterfacciaUtenteLogin i;
+	i = (gruppo.boundary.InterfacciaUtenteLogin)session.getAttribute("obj");
+	if(request.getParameter("PrenotazioneButton")	!= null){
+		if(i.getType().equals("Professore")) {
+			%>
+			<jsp:forward page="PrenotazioneConCaratteristiche.jsp"/>
+			<%
+		}
+		else {
+			%>
+            <p style="text-color:red;">Azione Non Consentita al segretario</p>
+            <%
+		}
+	}
+	if(request.getParameter("PrenotazioneIdButton")	!= null){
+		if(i.getType().equals("Professore")) {
+			%>
+			<jsp:forward page="PrenotazioneConId.jsp"/>
+			<%
+		}
+		else {
+			%>
+            <p style="text-color:red;">Azione Non Consentita al segretario</p>
+            <%
+		}
+	}
+	if(request.getParameter("VisualizzaPrenotazioniAtt") != null) {
+		%>
+		<jsp:forward page="PrenotazioniAttive.jsp"/>
+		<%
+	}
+	if(request.getParameter("ModificaAnnoAccademico")	!= null){
+		if(i.getType().equals("Segretario")) {
+			%>
+			<jsp:forward page="InputAnnoAccademico.jsp"/>
+			<%
+		}
+		else {
+			%>
+            <p style="text-color:red;">Azione Non Consentita al Professore</p>
+            <%
+		}
+	}
+	if(request.getParameter("Logout")  != null) {
+ 			i.loggout();
+ 			%>
+			<jsp:forward page="login.jsp"/>
+			<%
+ 	}
+	
+	
+
+%>
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
+    <style type="text/css">
+.button {
+  background-color: #ffff66;
+}
+
+</style></head>
+  <body class="button">
+    <form action = "MainMenu.jsp" method = "POST">
+      <div style="text-align: center;"> MENU PRINCIPALE</div>
+      <div style="text-align: center;"><br>
+      </div>
+      <div style="text-align: center;"><br>
+      </div>
+      <div style="text-align: center;"><input name="PrenotazioneButton" value="Prenotazione Conferenza Con  Caratteristiche aule"
+type="submit"></div>
+      <div style="text-align: center;"><input name="PrenotazioneIdButton" value="Prenotazione Conferenza COn un aula Specifica"
+type="submit"><br>
+      </div>
+      <div style="text-align: center;"><input name="VisualizzaPrenotazioniAtt" value="Visualizza Prenotazioni Attive"
+type="submit"><br>
+      </div>
+      <div style="text-align: center;"><input name="ModificaAnnoAccademico" value="Apri o Modifca un Anno Accademico"
+type="submit"><br>
+      </div>
+      <div style="text-align: center;"><input name="" value=""
+type="submit"><br>
+      </div>
+      <div style="text-align: center;"><input name="" value=""
+type="submit"><br>
+      </div>
+      <div style="text-align: center;"><input name="" value=""
+type="submit"><br>
+      </div>
+      <p><input name="Logout" value="Logout" type="submit"><br>
+    	</p><br>
+      
+      <br>
+      <div style="text-align: center;"><br>
+      </div>
+      <div style="text-align: center;"><br>
+      </div>
+      <div style="text-align: center;"><br>
+      </div>
+      <div style="text-align: center;"><br>
+      </div>
+      <div style="text-align: center;"><br>
+      </div>
+      <div style="text-align: center;"><br>
+      </div>
+      <div style="text-align: center;"><br>
+      </div>
+      <div style="text-align: center;"><br>
+      </div>
+      <div style="text-align: center;"><br>
+      </div>
+      <div style="text-align: center;"><br>
+      </div>
+      <div style="text-align: center;"><br>
+      </div>
+      <div style="text-align: center;"><br>
+      </div>
+    </form>
+  </body>
+</html>
+

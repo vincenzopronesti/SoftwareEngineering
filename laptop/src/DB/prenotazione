@@ -1,0 +1,18 @@
+﻿-- Table: public.prenotazione
+
+-- DROP TABLE public.prenotazione;
+
+CREATE TABLE public.prenotazione
+(
+  idaula integer NOT NULL,
+  data date NOT NULL,
+  fasciaoraria character varying(64) NOT NULL,
+  username character varying(64),
+  CONSTRAINT prenotazione_pkey PRIMARY KEY (idaula, data, fasciaoraria),
+  CONSTRAINT prenotazione_fasciaoraria_check CHECK (fasciaoraria::text = 'prima'::text OR fasciaoraria::text = 'seconda'::text OR fasciaoraria::text = 'terza'::text OR fasciaoraria::text = 'quarta'::text)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.prenotazione
+  OWNER TO postgres;

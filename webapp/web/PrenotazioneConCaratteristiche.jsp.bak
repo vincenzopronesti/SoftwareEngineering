@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
+  </head>
+  <body>
+    <form action="PrenotazioneConCaratteristiche.jsp" name="myform" method="POST">
+      <p><legend> Inserire il titolo della conferenza </legend><input name="titolo"
+          required="required" type="text">&nbsp;&nbsp; &nbsp; </p>
+      <p><input name="NumPosti" required="required" type="number">&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp; </p>
+      <p>&nbsp;&nbsp;&nbsp; </p>
+      <p></p>
+      <p> <label>Inserisci la data di inizio. <input name="dataInizio" required="required"
+            type="date"> </label> <br>
+        <label>Inserisci la data di fine. <input name="dataFine" required="required"
+            type="date"> </label><label> Inserire la Fascia oraria
+          <select name="FasciaOraria" required="required">
+            <option value="prima">9-11</option>
+            <option value="seconda">11-13</option>
+            <option value="terza">14-16</option>
+            <option value="quarta">16-18</option>
+          </select>
+        </label> </p>
+      <p> <label> Microfono<input name="Microfono" type="radio"></label><label>
+          Proiettore<input name="Proiettore" type="radio"></label><label>Lavagna<input
+            name="Lavagna" type="radio"></label><label>Lavagna Interattiva<input
+            name="LavagnaI" type="radio"></label><label>Presa Corrente<input name="PreseCorrente"
+            type="radio"></label><label>Ethernet<input name="Ethernet" type="radio"></label><input
+name="Ok" value="Ok" type="submit"></p>
+      <p><br>
+      </p>
+      <p><br>
+      </p>
+      <p><br>
+      </p>
+    </form>
+    <p><br>
+    </p>
+    <input name="a" value="a" type="button">
+  </body>
+</html>
